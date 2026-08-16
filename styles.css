@@ -428,7 +428,7 @@ footer {
 }
 
 
-/* Yorkie sausage heist */
+/* YUKI-bad sausage heist */
 .game-field { display:block; padding:30px 28px 62px; min-height:520px; }
 .game-field::before,.game-field::after,.target-ring { display:none; }
 .holes { height:100%; display:grid; grid-template-columns:repeat(3,1fr); gap:24px 34px; align-items:center; }
