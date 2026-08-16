@@ -426,3 +426,29 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }
+
+
+/* Yorkie sausage heist */
+.game-field { display:block; padding:30px 28px 62px; min-height:520px; }
+.game-field::before,.game-field::after,.target-ring { display:none; }
+.holes { height:100%; display:grid; grid-template-columns:repeat(3,1fr); gap:24px 34px; align-items:center; }
+.hole { position:relative; min-height:118px; display:grid; place-items:end center; overflow:hidden; }
+.hole::after { content:""; position:absolute; bottom:4px; width:88%; height:30px; border-radius:50%; background:radial-gradient(ellipse at center,#050505 0 48%,#262123 52%,#0d0d0e 72%); border:1px solid rgba(197,164,93,.3); box-shadow:inset 0 8px 12px #000,0 5px 18px rgba(0,0,0,.7); z-index:1; }
+.yorkie-button { --sausage-scale:1; position:relative; z-index:2; width:124px; height:112px; padding:0; margin-bottom:-76px; border:0; background:none; cursor:pointer; opacity:0; transform:translateY(55px) scale(.82); transition:transform .18s cubic-bezier(.2,.9,.3,1.25),opacity .12s; filter:drop-shadow(0 8px 9px rgba(0,0,0,.55)); }
+.yorkie-button.active { opacity:1; transform:translateY(0) scale(1); }
+.yorkie-button.retreat { opacity:0; transform:translateY(58px) scale(.86); }
+.yorkie-button svg { width:100%; height:100%; overflow:visible; pointer-events:none; }
+.yorkie-button .sausage { transform-box:fill-box; transform-origin:left center; transform:scaleX(var(--sausage-scale)); }
+.yorkie-button:hover .head { transform-box:fill-box; transform-origin:center; transform:rotate(-3deg); }
+.hole-number { position:absolute; top:5px; left:8px; color:#4f4b4c; font:8px var(--mono); }
+#instruction { bottom:23px; }
+.metric:nth-child(4) strong { color:var(--gold); }
+.theft-flash { animation:theft .35s ease; }
+@keyframes theft { 50% { color:var(--pink-light); text-shadow:0 0 14px var(--pink); } }
+@media(max-width:560px){
+ .game-field{min-height:470px;padding:22px 10px 58px}
+ .holes{gap:16px 5px}
+ .hole{min-height:105px}
+ .yorkie-button{width:102px;height:94px;margin-bottom:-63px}
+ .hole::after{height:24px}
+}
