@@ -1,43 +1,43 @@
 <div align="center">
 
-# ButtonOps
+# YUKI-bad
 
-### A highly reliable system for preventing unauthorized button clicks.
+### A Yorkie, a stolen sausage and nine holes. Catch Yuki before the evidence gets longer.
 
-[![Status](https://img.shields.io/badge/status-operational-D7A6B3?style=flat-square&labelColor=090909)](https://myo-suki.github.io/button-ops/)
-[![Reliability](https://img.shields.io/badge/reliability-100%25-C5A45D?style=flat-square&labelColor=090909)](https://myo-suki.github.io/button-ops/)
+[![Status](https://img.shields.io/badge/status-operational-D7A6B3?style=flat-square&labelColor=090909)](https://myo-suki.github.io/YUKI-bad/)
+[![Reliability](https://img.shields.io/badge/reliability-100%25-C5A45D?style=flat-square&labelColor=090909)](https://myo-suki.github.io/YUKI-bad/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-FFFDFC?style=flat-square&labelColor=090909&color=FFFDFC)](https://developer.mozilla.org/docs/Web/JavaScript)
 
-**[Launch ButtonOps](https://myo-suki.github.io/button-ops/)**
+**[Launch YUKI-bad](https://myo-suki.github.io/YUKI-bad/)**
 
 </div>
 
 ---
 
-ButtonOps is an enterprise-grade, zero-dependency button avoidance system. It detects cursor threats, performs emergency relocations, records operational events and maintains a completely unnecessary reliability score.
+YUKI-bad is an a zero-dependency browser game about Yuki, a badly behaved Yorkie who keeps escaping with an increasingly long piece of stolen sausage.
 
 ## Capabilities
 
-- Real-time cursor threat detection
-- Emergency button relocation
-- Operational event logging
-- Attempt and escape telemetry
-- Contribution-style incident grid
-- Mouse, touch and keyboard support
-- Local high-score persistence
+- Nine-hole Yorkie pursuit
+- Randomized hole changes
+- Sausage theft logging
+- Miss and escape telemetry
+- Contribution-style theft grid
+- Mouse and touch support
+- Increasing difficulty
 - Responsive interface
 - Zero dependencies
 
 ## Operational model
 
 ```text
-cursor approaches
+Yuki appears
        ↓
-threat detected
+catch attempt
        ↓
-emergency relocation
+Yuki changes hole
        ↓
-button integrity preserved
+sausage gets longer
 ```
 
 After enough incidents, containment fails and the user is allowed to defeat the button.
@@ -47,8 +47,8 @@ After enough incidents, containment fails and the user is allowed to defeat the 
 No build step is required.
 
 ```bash
-git clone https://github.com/Myo-suki/button-ops.git
-cd button-ops
+git clone https://github.com/Myo-suki/YUKI-bad.git
+cd YUKI-bad
 ```
 
 Open `index.html` in a browser.
