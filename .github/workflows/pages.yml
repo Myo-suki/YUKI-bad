@@ -1,4 +1,4 @@
-name: Deploy ButtonOps to GitHub Pages
+name: Deploy YUKI-bad to GitHub Pages
 
 on:
   push:
