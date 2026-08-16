@@ -47,19 +47,19 @@
         <small><i class="dot pink"></i> LIVE</small>
       </article>
       <article class="metric">
-        <span>MISSED CATCHES</span>
+        <span>SAUSAGES LOST</span>
         <strong id="attempts">00</strong>
-        <small>THIS SESSION</small>
+        <small>ESCAPED</small>
       </article>
       <article class="metric">
-        <span>HOLE CHANGES</span>
+        <span>SAUSAGES SAVED</span>
         <strong id="escapes">00</strong>
-        <small>AUTOMATED</small>
+        <small>RECOVERED</small>
       </article>
       <article class="metric">
-        <span>SAUSAGE STOLEN</span>
+        <span>CURRENT SAUSAGE</span>
         <strong id="reliability">100%</strong>
-        <small>CURRENT HEIST</small>
+        <small>PIECES IN MOUTH</small>
       </article>
     </section>
 
@@ -102,14 +102,14 @@
           <h2>Sausage theft activity</h2>
         </div>
         <div class="legend">
-          <span>LOW</span>
+          <span>MISSED</span>
           <i class="level l0"></i><i class="level l1"></i><i class="level l2"></i><i class="level l3"></i>
-          <span>CRITICAL</span>
+          <span>CAUGHT</span>
         </div>
       </div>
       <div class="incident-grid" id="incident-grid" aria-label="Incident activity grid"></div>
       <div class="activity-footer">
-        <span>Each square represents one stolen piece of sausage.</span>
+        <span>White means Yuki escaped. Pink means you caught him.</span>
         <button id="reset-system" type="button">RESET SYSTEM</button>
       </div>
     </section>
@@ -119,19 +119,6 @@
       <p>BUTTONOPS / <span id="year"></span></p>
     </footer>
   </main>
-
-  <div class="result-modal" id="result-modal" role="dialog" aria-modal="true" aria-labelledby="result-title" hidden>
-    <div class="modal-card">
-      <span class="modal-code">SYSTEM COMPROMISED</span>
-      <h2 id="result-title">You caught<br>the thief.</h2>
-      <p>The Yorkie has been detained. The remaining sausage has been recovered. Dignity has not.</p>
-      <div class="modal-stats">
-        <span>MISSES <strong id="final-attempts">00</strong></span>
-        <span>STOLEN PIECES <strong id="final-escapes">00</strong></span>
-      </div>
-      <button id="restart" type="button">PLAY AGAIN</button>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
