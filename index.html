@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A highly reliable system for preventing unauthorized button clicks.">
+  <meta name="description" content="A highly unreliable Yorkie sausage recovery system.">
   <meta name="theme-color" content="#090909">
-  <meta property="og:title" content="ButtonOps">
-  <meta property="og:description" content="Enterprise-grade button avoidance infrastructure.">
+  <meta property="og:title" content="SausageOps">
+  <meta property="og:description" content="Catch the Yorkie before it steals the whole sausage.">
   <meta property="og:type" content="website">
-  <title>ButtonOps — Button Avoidance Infrastructure</title>
+  <title>SausageOps — Yorkie Sausage Recovery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
 
   <main class="shell">
     <header class="topbar">
-      <a class="brand" href="#" aria-label="ButtonOps home">
+      <a class="brand" href="#" aria-label="SausageOps home">
         <span class="brand-mark">B</span>
-        <span>ButtonOps</span>
+        <span>SausageOps</span>
       </a>
       <div class="system-pill">
         <span class="pulse"></span>
@@ -35,31 +35,31 @@
     </header>
 
     <section class="hero">
-      <p class="eyebrow">BUTTON AVOIDANCE INFRASTRUCTURE</p>
-      <h1>Reliable protection against<br><em>unauthorized clicks.</em></h1>
-      <p class="intro">A zero-dependency system engineered to detect cursor threats, execute emergency relocations and preserve button integrity.</p>
+      <p class="eyebrow">YORKIE SAUSAGE RECOVERY UNIT</p>
+      <h1>Recover the sausage<br><em>before it disappears.</em></h1>
+      <p class="intro">A Yorkshire terrier stole the sausage. Catch the little criminal before it escapes into another hole with an even bigger piece.</p>
     </section>
 
     <section class="metrics" aria-label="System metrics">
       <article class="metric">
-        <span>BUTTON STATUS</span>
-        <strong id="button-status">PROTECTED</strong>
+        <span>YORKIE STATUS</span>
+        <strong id="button-status">ON THE RUN</strong>
         <small><i class="dot pink"></i> LIVE</small>
       </article>
       <article class="metric">
-        <span>USER ATTEMPTS</span>
+        <span>MISSED CATCHES</span>
         <strong id="attempts">00</strong>
         <small>THIS SESSION</small>
       </article>
       <article class="metric">
-        <span>SUCCESSFUL ESCAPES</span>
+        <span>HOLE CHANGES</span>
         <strong id="escapes">00</strong>
         <small>AUTOMATED</small>
       </article>
       <article class="metric">
-        <span>RELIABILITY</span>
+        <span>SAUSAGE STOLEN</span>
         <strong id="reliability">100%</strong>
-        <small>UNNECESSARILY HIGH</small>
+        <small>CURRENT HEIST</small>
       </article>
     </section>
 
@@ -68,15 +68,14 @@
         <div class="panel-heading">
           <div>
             <span class="panel-index">01</span>
-            <h2>Containment zone</h2>
+            <h2>Recovery field</h2>
           </div>
           <span class="secure-label" id="secure-label">SECURE</span>
         </div>
 
-        <div class="button-zone" id="button-zone">
-          <div class="target-ring"></div>
-          <button id="escape-button" type="button" aria-describedby="instruction">DO NOT CLICK</button>
-          <p id="instruction">Move your cursor into the containment zone.</p>
+        <div class="button-zone game-field" id="button-zone">
+          <div class="holes" id="holes" aria-label="Yorkie recovery field"></div>
+          <p id="instruction">Catch the Yorkie and take the sausage back.</p>
         </div>
       </article>
 
@@ -89,7 +88,7 @@
           <button class="clear-log" id="clear-log" type="button">CLEAR</button>
         </div>
         <div class="terminal-window" id="log" aria-live="polite">
-          <div class="log-line"><time>--:--:--</time><span class="log-info">INFO</span><p>ButtonOps initialized</p></div>
+          <div class="log-line"><time>--:--:--</time><span class="log-info">INFO</span><p>SausageOps initialized</p></div>
           <div class="log-line"><time>--:--:--</time><span class="log-ok">OK</span><p>Containment perimeter established</p></div>
           <div class="log-line"><time>--:--:--</time><span class="log-ok">OK</span><p>Button integrity verified</p></div>
         </div>
@@ -100,7 +99,7 @@
       <div class="panel-heading activity-heading">
         <div>
           <span class="panel-index">03</span>
-          <h2>Incident activity</h2>
+          <h2>Sausage theft activity</h2>
         </div>
         <div class="legend">
           <span>LOW</span>
@@ -110,13 +109,13 @@
       </div>
       <div class="incident-grid" id="incident-grid" aria-label="Incident activity grid"></div>
       <div class="activity-footer">
-        <span>Each square represents one entirely avoidable incident.</span>
+        <span>Each square represents one stolen piece of sausage.</span>
         <button id="reset-system" type="button">RESET SYSTEM</button>
       </div>
     </section>
 
     <footer>
-      <p>ENGINEERED FOR ABSOLUTELY NO REASON.</p>
+      <p>A COMPLETELY SERIOUS SAUSAGE RECOVERY OPERATION.</p>
       <p>BUTTONOPS / <span id="year"></span></p>
     </footer>
   </main>
@@ -124,13 +123,13 @@
   <div class="result-modal" id="result-modal" role="dialog" aria-modal="true" aria-labelledby="result-title" hidden>
     <div class="modal-card">
       <span class="modal-code">SYSTEM COMPROMISED</span>
-      <h2 id="result-title">You defeated<br>a button.</h2>
-      <p>Congratulations. The infrastructure has failed, the button has been clicked, and nobody is better off.</p>
+      <h2 id="result-title">You caught<br>the thief.</h2>
+      <p>The Yorkie has been detained. The remaining sausage has been recovered. Dignity has not.</p>
       <div class="modal-stats">
-        <span>ATTEMPTS <strong id="final-attempts">00</strong></span>
-        <span>ESCAPES <strong id="final-escapes">00</strong></span>
+        <span>MISSES <strong id="final-attempts">00</strong></span>
+        <span>STOLEN PIECES <strong id="final-escapes">00</strong></span>
       </div>
-      <button id="restart" type="button">RESTORE SYSTEM</button>
+      <button id="restart" type="button">PLAY AGAIN</button>
     </div>
   </div>
 
