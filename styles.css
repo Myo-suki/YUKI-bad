@@ -452,3 +452,20 @@ footer {
  .yorkie-button{width:102px;height:94px;margin-bottom:-63px}
  .hole::after{height:24px}
 }
+
+
+/* Endless game corrections */
+.hole{min-height:145px;overflow:hidden}
+.yorkie-button{margin-bottom:8px;z-index:2;transform:translateY(125px) scale(.9)}
+.yorkie-button.active{transform:translateY(0) scale(1)}
+.yorkie-button.retreat{transform:translateY(125px) scale(.9)}
+.hole::after{z-index:3;bottom:0}
+.incident-cell.miss{background:#fffdfc;border-color:#fffdfc}
+.incident-cell.hit{background:#d7a6b3;border-color:#d7a6b3;transform:scale(1.08)}
+.l0{background:#fffdfc}.l1,.l2,.l3{background:#d7a6b3}
+@media(max-width:560px){
+ .hole{min-height:125px}
+ .yorkie-button{margin-bottom:5px;transform:translateY(110px) scale(.88)}
+ .yorkie-button.active{transform:translateY(0) scale(1)}
+ .yorkie-button.retreat{transform:translateY(110px) scale(.88)}
+}
