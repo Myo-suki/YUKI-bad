@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A highly reliable system for preventing unauthorized button clicks.">
+  <meta name="theme-color" content="#090909">
+  <meta property="og:title" content="ButtonOps">
+  <meta property="og:description" content="Enterprise-grade button avoidance infrastructure.">
+  <meta property="og:type" content="website">
+  <title>ButtonOps — Button Avoidance Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="ButtonOps home">
+        <span class="brand-mark">B</span>
+        <span>ButtonOps</span>
+      </a>
+      <div class="system-pill">
+        <span class="pulse"></span>
+        <span id="global-status">SYSTEM OPERATIONAL</span>
+      </div>
+      <a class="github-link" href="https://github.com/Myo-suki/button-ops" target="_blank" rel="noreferrer">
+        GitHub
+        <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">BUTTON AVOIDANCE INFRASTRUCTURE</p>
+      <h1>Reliable protection against<br><em>unauthorized clicks.</em></h1>
+      <p class="intro">A zero-dependency system engineered to detect cursor threats, execute emergency relocations and preserve button integrity.</p>
+    </section>
+
+    <section class="metrics" aria-label="System metrics">
+      <article class="metric">
+        <span>BUTTON STATUS</span>
+        <strong id="button-status">PROTECTED</strong>
+        <small><i class="dot pink"></i> LIVE</small>
+      </article>
+      <article class="metric">
+        <span>USER ATTEMPTS</span>
+        <strong id="attempts">00</strong>
+        <small>THIS SESSION</small>
+      </article>
+      <article class="metric">
+        <span>SUCCESSFUL ESCAPES</span>
+        <strong id="escapes">00</strong>
+        <small>AUTOMATED</small>
+      </article>
+      <article class="metric">
+        <span>RELIABILITY</span>
+        <strong id="reliability">100%</strong>
+        <small>UNNECESSARILY HIGH</small>
+      </article>
+    </section>
+
+    <section class="operations-grid">
+      <article class="containment panel">
+        <div class="panel-heading">
+          <div>
+            <span class="panel-index">01</span>
+            <h2>Containment zone</h2>
+          </div>
+          <span class="secure-label" id="secure-label">SECURE</span>
+        </div>
+
+        <div class="button-zone" id="button-zone">
+          <div class="target-ring"></div>
+          <button id="escape-button" type="button" aria-describedby="instruction">DO NOT CLICK</button>
+          <p id="instruction">Move your cursor into the containment zone.</p>
+        </div>
+      </article>
+
+      <article class="terminal panel">
+        <div class="panel-heading">
+          <div>
+            <span class="panel-index">02</span>
+            <h2>Operational log</h2>
+          </div>
+          <button class="clear-log" id="clear-log" type="button">CLEAR</button>
+        </div>
+        <div class="terminal-window" id="log" aria-live="polite">
+          <div class="log-line"><time>--:--:--</time><span class="log-info">INFO</span><p>ButtonOps initialized</p></div>
+          <div class="log-line"><time>--:--:--</time><span class="log-ok">OK</span><p>Containment perimeter established</p></div>
+          <div class="log-line"><time>--:--:--</time><span class="log-ok">OK</span><p>Button integrity verified</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="activity panel">
+      <div class="panel-heading activity-heading">
+        <div>
+          <span class="panel-index">03</span>
+          <h2>Incident activity</h2>
+        </div>
+        <div class="legend">
+          <span>LOW</span>
+          <i class="level l0"></i><i class="level l1"></i><i class="level l2"></i><i class="level l3"></i>
+          <span>CRITICAL</span>
+        </div>
+      </div>
+      <div class="incident-grid" id="incident-grid" aria-label="Incident activity grid"></div>
+      <div class="activity-footer">
+        <span>Each square represents one entirely avoidable incident.</span>
+        <button id="reset-system" type="button">RESET SYSTEM</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>ENGINEERED FOR ABSOLUTELY NO REASON.</p>
+      <p>BUTTONOPS / <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <div class="result-modal" id="result-modal" role="dialog" aria-modal="true" aria-labelledby="result-title" hidden>
+    <div class="modal-card">
+      <span class="modal-code">SYSTEM COMPROMISED</span>
+      <h2 id="result-title">You defeated<br>a button.</h2>
+      <p>Congratulations. The infrastructure has failed, the button has been clicked, and nobody is better off.</p>
+      <div class="modal-stats">
+        <span>ATTEMPTS <strong id="final-attempts">00</strong></span>
+        <span>ESCAPES <strong id="final-escapes">00</strong></span>
+      </div>
+      <button id="restart" type="button">RESTORE SYSTEM</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
