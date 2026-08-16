@@ -56,7 +56,7 @@ function buildHoles(){
  holes.innerHTML="";
  for(let i=0;i<9;i++){
   const hole=document.createElement("div"); hole.className="hole";
-  hole.innerHTML=`<span class="hole-number">0${i+1}</span><button class="yorkie-button" type="button" aria-label="Catch the Yorkshire terrier">${yorkieSVG}</button>`;
+  hole.innerHTML=`<span class="hole-number">0${i+1}</span><button class="yorkie-button" type="button" aria-label="Catch the Yuki the Yorkshire terrier">${yorkieSVG}</button>`;
   const dog=hole.querySelector("button");
   dog.addEventListener("pointerenter",e=>{if(e.pointerType==="mouse")catchDog(i)});
   dog.addEventListener("pointerdown",e=>{e.preventDefault();catchDog(i)});
@@ -82,7 +82,7 @@ function nextHole(){
 function missed(){
  if(!playing)return;
  misses++; moves++; pieces++; markTheft(); update();
- addLog("THEFT",`Yorkie escaped with sausage piece #${pieces}`);
+ addLog("THEFT",`Yuki escaped with sausage piece #${pieces}`);
  instruction.textContent=pieces<6?"Too slow. The stolen sausage is getting longer.":pieces<12?"The suspect is accelerating. So is the sausage.":"This has become a major sausage incident.";
  nextHole();
 }
@@ -92,16 +92,16 @@ function catchDog(index){
  buttons()[active].classList.remove("active");
  statusEl.textContent="DETAINED";globalStatusEl.textContent="SAUSAGE SECURED";secureLabel.textContent="CAUGHT";
  finalMisses.textContent=pad(misses);finalPieces.textContent=pad(pieces);
- addLog("CAUGHT",`Yorkie detained after ${moves} hole changes`);
+ addLog("CAUGHT",`Yuki detained after ${moves} hole changes`);
  setTimeout(()=>{modal.hidden=false;document.body.style.overflow="hidden"},180);
 }
 function reset(){
  clearTimeout(timer); misses=0;moves=0;pieces=1;active=-1;playing=true;currentCell=0;
  statusEl.textContent="ON THE RUN";globalStatusEl.textContent="RECOVERY IN PROGRESS";secureLabel.textContent="ACTIVE";
- instruction.textContent="Catch the Yorkie and take the sausage back.";
+ instruction.textContent="Catch the Yuki and take the sausage back.";
  modal.hidden=true;document.body.style.overflow="";
  buildGrid();buildHoles();update();log.innerHTML="";
- addLog("INFO","Yorkie located with stolen sausage");addLog("INFO","Manual recovery authorized");
+ addLog("INFO","Yuki located with stolen sausage");addLog("INFO","Manual recovery authorized");
  setTimeout(nextHole,500);
 }
 document.querySelector("#clear-log").addEventListener("click",()=>{log.innerHTML="";addLog("INFO","Operational log cleared")});
