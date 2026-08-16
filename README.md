@@ -2,7 +2,7 @@
 
 # YUKI-bad
 
-### A Yorkie, a stolen sausage and nine holes. Catch Yuki before the evidence gets longer.
+### A Yorkshire Terrier, a stolen sausage, and nine holes. Catch Yuki before he steals all the sausages.
 
 [![Status](https://img.shields.io/badge/status-operational-D7A6B3?style=flat-square&labelColor=090909)](https://myo-suki.github.io/YUKI-bad/)
 [![Reliability](https://img.shields.io/badge/reliability-100%25-C5A45D?style=flat-square&labelColor=090909)](https://myo-suki.github.io/YUKI-bad/)
